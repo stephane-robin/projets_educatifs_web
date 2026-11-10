@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title> Ma banque </title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            background-color:#f9f4f4;
+        }
+        input{
+            font-size:1rem;
+            padding:0.5rem;
+            border-radius:25px;
+            color:gray;
+            border: 2px solid lightgray;
+            width:200px;
+        }
+        .btn{
+            background-color: #b2dee9;
+            color:white;
+            border:2px solid #b2dee9;
+            border-radius:25px;
+            padding:0.5rem;
+            font-size:1.2rem;
+            font-weight:bold;
+            width:200px;
+            margin:8px 0 0 0;
+        }
+        .formulaire{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+        }
+        p{
+            font-size:1.2rem;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+<form class="formulaire" method="get" onsubmit="afficher(event)">
+    <p>Bienvenue dans notre super banque 😀.</p>
+    <p style="margin-left:200px;margin-right:200px;text-align:left">
+        Tu vas devoir compléter le code source de cette page pour qu'elle calcule 
+        automatiquement en JavaScript le capital obtenu au bout d'un certain nombre d'années, 
+        avec un capital initial défini par ton client.
+    </p>
+    <input 
+        type="number" 
+        id="capital"
+        name="capital" 
+        placeholder="Capital initial"
+    />
+    <input 
+        type="number" 
+        id="annees"
+        name="annees" 
+        placeholder="Nombre d'années"
+    />
+    <button class="btn" type="submit">Valider</button>
+</form>
+<!-- ou le resultat du calcul sera affiche -->
+<p id="resultat"></p>
+
+<script>
+    // fonction a completer
+    function afficher(event){
+        event.preventDefault();
+    }
+</script>
+</body>
+</html>
